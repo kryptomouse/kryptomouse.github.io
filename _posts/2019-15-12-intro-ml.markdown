@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "Introduction to Machine Learning"
+date:   2019-10-11 20:00:00 +0100
+author: KryptoMouse
+toc: true
+categories: machine-learning
+tags: [machine-learning]
+---
+
+This piece will provide an overview of the different groups of Machine Learning
+algorithms.
+
+The term Machine Learning (ML) was coined by [Arthur Samuel](https://en.wikipedia.org/wiki/Arthur_Samuel) in 1959.  
+[Tom M. Mitchell](https://en.wikipedia.org/wiki/Tom_M._Mitchell) was widely quoted for his definition of ML:
+
+> A computer program is said to learn from experience *E* with respect to some class of tasks *T* and performance measure *P* if its performance at tasks in *T*, as measured by *P*, improves with experience *E*.”
+
+Hence, algorithms solving Machine Learning tasks are often called *learning* algorithms.
+
+## Supervised and Unsupervised Learning
+Machine Learning Tasks are categorized into two main groups.
+
+### Supervised Learning
+Algorithms solving supervised learning tasks are mathematical models built from a set of  *training data*.
+The training data contains the input and the desired output label.
+(e.g. an email is the input and the result label is ‘spam’ / ‘no-spam’)
+
+Supervised Learning can further be divided into two classes of algorithms:
+
+- Regression Algorithms  
+Where the output can take on any value within a continuous range.
+(e.g. an algorithm that predicts tomorrow's temperature)
+
+- Classification Algorithms  
+Where the output can take on a limited set of values (or a discrete set of values, if you will).
+(e.g. an algorithm that predicts whether or not an email should categorized as spam)
+
+### Unsupervised Learning
+Algorithms solving unsupervised learning tasks are trained on data without knowing the actual output label.
+(e.g. grouping or clustering of data points)
+
+
+## Active Learning
+Algorithms solving this kind of tasks not only uses a training but interactively queries the algorithm user in order to get output labels of new data points.
+Since the learner chooses the data points for labeling the learning rate can become faster than normal [Supervised Learning](#supervised-learning)
+
+## Reinforcement Learning
+This kind of learning differs from [Supervised Learning](#supervised-learning) since no *training set* is needed.
+Also, if the learning algorithm fails to predict correctly, it needs no explicit correction.
+
+The algorithm is tailored for software agents which can take actions in a given environment and achieve a reward.
+The goal of the software agent is then to maximize the cumulative reward by taking actions accordingly.
+(e.g. a self-driving car is a software agent which can be get a feedback (reward) on whether an action was good or bad)
+
+## Deep Learning
+Currently there is a lot of hype around Deep Learning. Deep Learning algorithms can be both
+supervised and unsupervised. They are a sub-set of Machine Learning algorithms and uses
+a method based on Artificial Neural Networks (ANN).
+
+### Artificial Neural Networks (ANN)
+ANN are computing systems inspired by the neural networks that constitute our brains.
+Our brain processes information by neurons communicating using signals.
+Similarly, artificial neurons are the smallest unit of ANNs getting input signals
+and sending signals downstream, through layers of other neurons.
+The output layer will decide the output of the algorithm solving the Machine Learning task.
+
+#### Recurrent Neural Networks (RNN)
+The simplest type of AAN is the Feedforward Neural Network where the information runs
+in one direction through the nodes in each layer.
+Recurrent Neural Networks do not have this restriction and therefore can use internal state
+to process information as it repeatedly passes through.
+
+### Deep Neural Networks (DNN)
+Deep neural networks are basically ANNs with multiple layers between input and output layer.
+
+#### Convolutional Neural Networks (CNN)
+The Machine Learning tasks tackled with CNN is often related to analyzing visual imagery.
+They are built using [Multilayer Perceptrons](https://en.wikipedia.org/wiki/Multilayer_perceptron) (MLPs)
+which is basically a [DNN](#deep-neural-networks-dnn) where every neuron in one layer is connected to all neurons in the 'down-stream' layer.
+As the name suggests convolutional layers convolve the input using multiplication
+or dot products in order to make the task (e.g. processing high resolution images) computational feasible.
+
+## Happy (Machine) Learning
+While researching the different branches of Machine Learning I came across [another (much more complete)
+post](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
+which groups Machine Learning algorithms by similarity as well.
+The space of learning algorithms is vast both in terms of complexity and growth.
+Hope this helps provide a mental picture of the different algorithms and how they relate to each other.

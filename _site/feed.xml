@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-18T21:20:34+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">kryptomouse.com</title><subtitle>Krypto by Day. Mouse by Night.</subtitle><entry><title type="html">Introduction to Machine Learning</title><link href="http://localhost:4000/machine-learning/2019/10/11/intro-ml.html" rel="alternate" type="text/html" title="Introduction to Machine Learning" /><published>2019-10-11T21:00:00+02:00</published><updated>2019-10-11T21:00:00+02:00</updated><id>http://localhost:4000/machine-learning/2019/10/11/intro-ml</id><content type="html" xml:base="http://localhost:4000/machine-learning/2019/10/11/intro-ml.html">&lt;p&gt;This piece will provide an overview of the different groups of Machine Learning
+algorithms.&lt;/p&gt;
+
+&lt;p&gt;The term Machine Learning (ML) was coined by &lt;a href=&quot;https://en.wikipedia.org/wiki/Arthur_Samuel&quot;&gt;Arthur Samuel&lt;/a&gt; in 1959.&lt;br /&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Tom_M._Mitchell&quot;&gt;Tom M. Mitchell&lt;/a&gt; was widely quoted for his definition of ML:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A computer program is said to learn from experience &lt;em&gt;E&lt;/em&gt; with respect to some class of tasks &lt;em&gt;T&lt;/em&gt; and performance measure &lt;em&gt;P&lt;/em&gt; if its performance at tasks in &lt;em&gt;T&lt;/em&gt;, as measured by &lt;em&gt;P&lt;/em&gt;, improves with experience &lt;em&gt;E&lt;/em&gt;.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hence, algorithms solving Machine Learning tasks are often called &lt;em&gt;learning&lt;/em&gt; algorithms.&lt;/p&gt;
+
+&lt;h2 id=&quot;supervised-and-unsupervised-learning&quot;&gt;Supervised and Unsupervised Learning&lt;/h2&gt;
+&lt;p&gt;Machine Learning Tasks are categorized into two main groups.&lt;/p&gt;
+
+&lt;h3 id=&quot;supervised-learning&quot;&gt;Supervised Learning&lt;/h3&gt;
+&lt;p&gt;Algorithms solving supervised learning tasks are mathematical models built from a set of  &lt;em&gt;training data&lt;/em&gt;.
+The training data contains the input and the desired output label.
+(e.g. an email is the input and the result label is ‘spam’ / ‘no-spam’)&lt;/p&gt;
+
+&lt;p&gt;Supervised Learning can further be divided into two classes of algorithms:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Regression Algorithms&lt;br /&gt;
+Where the output can take on any value within a continuous range.
+(e.g. an algorithm that predicts tomorrow’s temperature)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Classification Algorithms&lt;br /&gt;
+Where the output can take on a limited set of values (or a discrete set of values, if you will).
+(e.g. an algorithm that predicts whether or not an email should categorized as spam)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;unsupervised-learning&quot;&gt;Unsupervised Learning&lt;/h3&gt;
+&lt;p&gt;Algorithms solving unsupervised learning tasks are trained on data without knowing the actual output label.
+(e.g. grouping or clustering of data points)&lt;/p&gt;
+
+&lt;h2 id=&quot;active-learning&quot;&gt;Active Learning&lt;/h2&gt;
+&lt;p&gt;Algorithms solving this kind of tasks not only uses a training but interactively queries the algorithm user in order to get output labels of new data points.
+Since the learner chooses the data points for labeling the learning rate can become faster than normal &lt;a href=&quot;#supervised-learning&quot;&gt;Supervised Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reinforcement-learning&quot;&gt;Reinforcement Learning&lt;/h2&gt;
+&lt;p&gt;This kind of learning differs from &lt;a href=&quot;#supervised-learning&quot;&gt;Supervised Learning&lt;/a&gt; since no &lt;em&gt;training set&lt;/em&gt; is needed.
+Also, if the learning algorithm fails to predict correctly, it needs no explicit correction.&lt;/p&gt;
+
+&lt;p&gt;The algorithm is tailored for software agents which can take actions in a given environment and achieve a reward.
+The goal of the software agent is then to maximize the cumulative reward by taking actions accordingly.
+(e.g. a self-driving car is a software agent which can be get a feedback (reward) on whether an action was good or bad)&lt;/p&gt;
+
+&lt;h2 id=&quot;deep-learning&quot;&gt;Deep Learning&lt;/h2&gt;
+&lt;p&gt;Currently there is a lot of hype around Deep Learning. Deep Learning algorithms can be both
+supervised and unsupervised. They are a sub-set of Machine Learning algorithms and uses
+a method based on Artificial Neural Networks (ANN).&lt;/p&gt;
+
+&lt;h3 id=&quot;artificial-neural-networks-ann&quot;&gt;Artificial Neural Networks (ANN)&lt;/h3&gt;
+&lt;p&gt;ANN are computing systems inspired by the neural networks that constitute our brains.
+Our brain processes information by neurons communicating using signals.
+Similarly, artificial neurons are the smallest unit of ANNs getting input signals
+and sending signals downstream, through layers of other neurons.
+The output layer will decide the output of the algorithm solving the Machine Learning task.&lt;/p&gt;
+
+&lt;h4 id=&quot;recurrent-neural-networks-rnn&quot;&gt;Recurrent Neural Networks (RNN)&lt;/h4&gt;
+&lt;p&gt;The simplest type of AAN is the Feedforward Neural Network where the information runs
+in one direction through the nodes in each layer.
+Recurrent Neural Networks do not have this restriction and therefore can use internal state
+to process information as it repeatedly passes through.&lt;/p&gt;
+
+&lt;h3 id=&quot;deep-neural-networks-dnn&quot;&gt;Deep Neural Networks (DNN)&lt;/h3&gt;
+&lt;p&gt;Deep neural networks are basically ANNs with multiple layers between input and output layer.&lt;/p&gt;
+
+&lt;h4 id=&quot;convolutional-neural-networks-cnn&quot;&gt;Convolutional Neural Networks (CNN)&lt;/h4&gt;
+&lt;p&gt;The Machine Learning tasks tackled with CNN is often related to analyzing visual imagery.
+They are built using &lt;a href=&quot;https://en.wikipedia.org/wiki/Multilayer_perceptron&quot;&gt;Multilayer Perceptrons&lt;/a&gt; (MLPs)
+which is basically a &lt;a href=&quot;#deep-neural-networks-dnn&quot;&gt;DNN&lt;/a&gt; where every neuron in one layer is connected to all neurons in the ‘down-stream’ layer.
+As the name suggests convolutional layers convolve the input using multiplication
+or dot products in order to make the task (e.g. processing high resolution images) computational feasible.&lt;/p&gt;
+
+&lt;h2 id=&quot;happy-machine-learning&quot;&gt;Happy (Machine) Learning&lt;/h2&gt;
+&lt;p&gt;While researching the different branches of Machine Learning I came across &lt;a href=&quot;https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/&quot;&gt;another (much more complete)
+post&lt;/a&gt;
+which groups Machine Learning algorithms by similarity as well.
+The space of learning algorithms is vast both in terms of complexity and growth.
+Hope this helps provide a mental picture of the different algorithms and how they relate to each other.&lt;/p&gt;</content><author><name>KryptoMouse</name></author><category term="machine-learning" /><summary type="html">This piece will provide an overview of the different groups of Machine Learning algorithms.</summary></entry></feed>

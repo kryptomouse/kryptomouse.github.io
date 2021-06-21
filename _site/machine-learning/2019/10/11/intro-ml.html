@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script type="text/javascript" async
+	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154410928-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154410928-1');
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">kryptomouse.com</a></h1>
+
+        
+
+        <p>Krypto by Day.
+           Mouse by Night.</p>
+
+	<p class="view">
+    <a href="/books">Books </a> <br/>
+    <a href="/crypto">Cryptography </a><br/>
+    <a href="/ml">Machine Learning </a>
+  </p>
+	<p class="view">
+	  <a href="https://github.com/kryptomouse">GitHub</a><br/>
+	  <a href="https://twitter.com/kryptomouse">Twitter</a><br/>
+	</p>
+
+
+
+        
+      </header>
+      <section>
+
+	<div class="title">
+<h1>Introduction to Machine Learning</h1>
+<small>11 October 2019</small>
+</div>
+<ul>
+  <li><a href="#supervised-and-unsupervised-learning">Supervised and Unsupervised Learning</a>
+    <ul>
+      <li><a href="#supervised-learning">Supervised Learning</a></li>
+      <li><a href="#unsupervised-learning">Unsupervised Learning</a></li>
+    </ul>
+  </li>
+  <li><a href="#active-learning">Active Learning</a></li>
+  <li><a href="#reinforcement-learning">Reinforcement Learning</a></li>
+  <li><a href="#deep-learning">Deep Learning</a>
+    <ul>
+      <li><a href="#artificial-neural-networks-ann">Artificial Neural Networks (ANN)</a>
+        <ul>
+          <li><a href="#recurrent-neural-networks-rnn">Recurrent Neural Networks (RNN)</a></li>
+        </ul>
+      </li>
+      <li><a href="#deep-neural-networks-dnn">Deep Neural Networks (DNN)</a>
+        <ul>
+          <li><a href="#convolutional-neural-networks-cnn">Convolutional Neural Networks (CNN)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#happy-machine-learning">Happy (Machine) Learning</a></li>
+</ul>
+
+<br/>
+<p>This piece will provide an overview of the different groups of Machine Learning
+algorithms.</p>
+
+<p>The term Machine Learning (ML) was coined by <a href="https://en.wikipedia.org/wiki/Arthur_Samuel">Arthur Samuel</a> in 1959.<br />
+<a href="https://en.wikipedia.org/wiki/Tom_M._Mitchell">Tom M. Mitchell</a> was widely quoted for his definition of ML:</p>
+
+<blockquote>
+  <p>A computer program is said to learn from experience <em>E</em> with respect to some class of tasks <em>T</em> and performance measure <em>P</em> if its performance at tasks in <em>T</em>, as measured by <em>P</em>, improves with experience <em>E</em>.”</p>
+</blockquote>
+
+<p>Hence, algorithms solving Machine Learning tasks are often called <em>learning</em> algorithms.</p>
+
+<h2 id="supervised-and-unsupervised-learning">Supervised and Unsupervised Learning</h2>
+<p>Machine Learning Tasks are categorized into two main groups.</p>
+
+<h3 id="supervised-learning">Supervised Learning</h3>
+<p>Algorithms solving supervised learning tasks are mathematical models built from a set of  <em>training data</em>.
+The training data contains the input and the desired output label.
+(e.g. an email is the input and the result label is ‘spam’ / ‘no-spam’)</p>
+
+<p>Supervised Learning can further be divided into two classes of algorithms:</p>
+
+<ul>
+  <li>
+    <p>Regression Algorithms<br />
+Where the output can take on any value within a continuous range.
+(e.g. an algorithm that predicts tomorrow’s temperature)</p>
+  </li>
+  <li>
+    <p>Classification Algorithms<br />
+Where the output can take on a limited set of values (or a discrete set of values, if you will).
+(e.g. an algorithm that predicts whether or not an email should categorized as spam)</p>
+  </li>
+</ul>
+
+<h3 id="unsupervised-learning">Unsupervised Learning</h3>
+<p>Algorithms solving unsupervised learning tasks are trained on data without knowing the actual output label.
+(e.g. grouping or clustering of data points)</p>
+
+<h2 id="active-learning">Active Learning</h2>
+<p>Algorithms solving this kind of tasks not only uses a training but interactively queries the algorithm user in order to get output labels of new data points.
+Since the learner chooses the data points for labeling the learning rate can become faster than normal <a href="#supervised-learning">Supervised Learning</a></p>
+
+<h2 id="reinforcement-learning">Reinforcement Learning</h2>
+<p>This kind of learning differs from <a href="#supervised-learning">Supervised Learning</a> since no <em>training set</em> is needed.
+Also, if the learning algorithm fails to predict correctly, it needs no explicit correction.</p>
+
+<p>The algorithm is tailored for software agents which can take actions in a given environment and achieve a reward.
+The goal of the software agent is then to maximize the cumulative reward by taking actions accordingly.
+(e.g. a self-driving car is a software agent which can be get a feedback (reward) on whether an action was good or bad)</p>
+
+<h2 id="deep-learning">Deep Learning</h2>
+<p>Currently there is a lot of hype around Deep Learning. Deep Learning algorithms can be both
+supervised and unsupervised. They are a sub-set of Machine Learning algorithms and uses
+a method based on Artificial Neural Networks (ANN).</p>
+
+<h3 id="artificial-neural-networks-ann">Artificial Neural Networks (ANN)</h3>
+<p>ANN are computing systems inspired by the neural networks that constitute our brains.
+Our brain processes information by neurons communicating using signals.
+Similarly, artificial neurons are the smallest unit of ANNs getting input signals
+and sending signals downstream, through layers of other neurons.
+The output layer will decide the output of the algorithm solving the Machine Learning task.</p>
+
+<h4 id="recurrent-neural-networks-rnn">Recurrent Neural Networks (RNN)</h4>
+<p>The simplest type of AAN is the Feedforward Neural Network where the information runs
+in one direction through the nodes in each layer.
+Recurrent Neural Networks do not have this restriction and therefore can use internal state
+to process information as it repeatedly passes through.</p>
+
+<h3 id="deep-neural-networks-dnn">Deep Neural Networks (DNN)</h3>
+<p>Deep neural networks are basically ANNs with multiple layers between input and output layer.</p>
+
+<h4 id="convolutional-neural-networks-cnn">Convolutional Neural Networks (CNN)</h4>
+<p>The Machine Learning tasks tackled with CNN is often related to analyzing visual imagery.
+They are built using <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">Multilayer Perceptrons</a> (MLPs)
+which is basically a <a href="#deep-neural-networks-dnn">DNN</a> where every neuron in one layer is connected to all neurons in the ‘down-stream’ layer.
+As the name suggests convolutional layers convolve the input using multiplication
+or dot products in order to make the task (e.g. processing high resolution images) computational feasible.</p>
+
+<h2 id="happy-machine-learning">Happy (Machine) Learning</h2>
+<p>While researching the different branches of Machine Learning I came across <a href="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">another (much more complete)
+post</a>
+which groups Machine Learning algorithms by similarity as well.
+The space of learning algorithms is vast both in terms of complexity and growth.
+Hope this helps provide a mental picture of the different algorithms and how they relate to each other.</p>
+
+
+
+  <small>tags: <em>machine-learning</em></small>
+
+
+
+      </section>
+      <footer>
+        
+        <p><small>Theme inspired by <a href="https://github.com/orderedlist/minimal">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
