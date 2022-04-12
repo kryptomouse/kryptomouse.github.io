@@ -16,9 +16,8 @@
 title: kryptomouse.com
 email: kryptomouse@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Krypto by Day. Mouse by Night.
 
-#logo: profile.png
+logo: kmouse.png
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kryptomouse.com" # the base hostname & protocol for your site, e.g. http://example.com
