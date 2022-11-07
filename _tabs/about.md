@@ -3,6 +3,5 @@
 icon: fas fa-info-circle
 order: 4
 ---
+![The adventures of Kryptomouse](/kryptomouse.jpg)
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }

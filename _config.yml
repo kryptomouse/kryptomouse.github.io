@@ -24,10 +24,10 @@ title: KryptoMouse                          # the main title
 tagline: the amazing adventures of kryptomouse   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  Home of KryptoMouse - the mouse of steel.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://kryptomouse.github.io'
 
 github:
   username: kryptomouse             # change to your github username
